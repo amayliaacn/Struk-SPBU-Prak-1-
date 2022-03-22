@@ -21,4 +21,20 @@ int main(){
 	cout<<endl;
 	cout<<"Masukkan nama   : ";cin>>nama;
 	cout<<"Masukkan pilihan  : ";cin>>a;
+	if(a == 1){
+		harga = 7000;
+		cout<<"Masukkan jumlah liter yang diinginkan : ";cin>>liter;
+		total = harga * liter;
+		totalbelanja += total;
+		cout<<"Total : Rp. "<<total;
+		cout<<endl;
+	}
+	if(a == 2){
+		harga = 9000;
+		cout<<"Masukkan jumlah liter yang diinginkan : ";cin>>liter;
+		total = harga * liter;
+		totalbelanja += total;
+		cout<<"Total : Rp. "<<total;
+		cout<<endl<<endl;
+	}
 }
