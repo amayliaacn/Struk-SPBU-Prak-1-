@@ -1,0 +1,9 @@
+=====================================
+========== Nota SPBU Ceria ==========
+=====================================
+Nama  : rifdah
+Jenis Bensin : Pertalite
+Masukkan harga per liter : 7000
+Masukkan jumlah liter yang diinginkan : 2
+Total : Rp. 14000
+

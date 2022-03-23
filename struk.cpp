@@ -37,4 +37,35 @@ int main(){
 		cout<<"Total : Rp. "<<total;
 		cout<<endl<<endl;
 	}
+		
+	cout<<"\nPilih Menu No 3 Untuk Mencetak Struk Anda : ";cin>>pilih;
+	cout<<endl;
+	if(pilih==3){
+		if(harga==7000){
+			keluaran<<"====================================="<<endl;
+			keluaran<<"========== Nota SPBU Ceria =========="<<endl;
+			keluaran<<"====================================="<<endl;
+			keluaran<<"Nama  : "<<nama<<endl;
+			keluaran<<"Jenis Bensin : Pertalite"<<endl;
+			keluaran<<"Masukkan harga per liter : "<<harga<<endl;
+			keluaran<<"Masukkan jumlah liter yang diinginkan : "<<liter<<endl;
+			total = harga * liter;
+			totalbelanja += total;
+			keluaran<<"Total : Rp. "<<total;
+			keluaran<<endl<<endl;
+		}
+		if(harga==9000){
+		keluaran<<"====================================="<<endl;
+		keluaran<<"========== Nota SPBU Ceria =========="<<endl;
+		keluaran<<"====================================="<<endl;
+		keluaran<<"Nama  : "<<nama<<endl;
+		keluaran<<"Jenis Bensin : Pertamax"<<endl;
+		keluaran<<"Masukkan harga per liter : "<<harga<<endl;
+		keluaran<<"Masukkan jumlah liter yang diinginkan : "<<liter<<endl;
+		total = harga * liter;
+		totalbelanja += total;
+		keluaran<<"Total : Rp. "<<total;
+		keluaran<<endl<<endl;
+		}
+	}
 }
