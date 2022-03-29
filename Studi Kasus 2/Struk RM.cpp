@@ -18,7 +18,7 @@ cout<<"1) Ayam geprek (Rp.21000)"<<endl;
 cout<<"2) Ayam goreng (Rp.17000)"<<endl;
 cout<<"3) Udang goreng (Rp.19000)"<<endl;
 cout<<"4) Cumi goreng (Rp.20000)"<<endl;
-cout<<"5) Ayam baka (Rp.25000)"<<endl;
+cout<<"5) Ayam bakar (Rp.25000)"<<endl;
 cout<<"6) Keluar"<<endl;	
 cout<<endl;
 cout<<"Jumlah Menu Yang Dipesan = ";
@@ -98,3 +98,55 @@ cout<<"jarak dari rumah ke rumah akan adalah "<<jarak<<"km"<<endl;
 if(jarak<=3){
 if(bayar>=25000){
 ongkir = 3000;
+cout<<"Kamu Dapat Potongan ongkir 3000" <<endl;
+}else 
+  if(bayar>=50000){
+diskon = bayar*0.15;//diskon 15%
+ongkir = 5000;
+cout<<"Kamu Dapat Diskon 15% dan Potongan ongkir 8000" <<endl;
+}else
+  if(bayar>=150000){
+diskon = bayar*0.35;//dis
+ongkir = 8000;
+cout<<"Kamu Dapat Diskon 35% dan Potongan ongkir 8000" <<endl;
+}
+else {
+diskon = 0;
+}
+}
+else if (jarak>=3) {
+	ongkir =25000;
+	if(bayar>=25000){
+ongkir = 15000-3000;
+cout<<"Kamu Dapat Potongan ongkir 3000" <<endl;
+}else 
+  if(bayar>=50000){
+diskon = bayar*0.15;//diskon 15%
+ongkir = 15000-5000;
+cout<<"Kamu Dapat Diskon 15% dan Potongan ongkir 8000" <<endl;
+}else
+  if(bayar>=150000){
+diskon = bayar*0.35;//diskon 35%
+ongkir = 15000-8000;
+cout<<"Kamu Dapat Diskon 35% dan Potongan ongkir 8000" <<endl;
+}
+else {
+diskon = 0;
+}
+}
+else{
+	cout<<"input gagal";
+}
+
+akhir=bayar-diskon;
+kembalian=duit-akhir;
+cout<<"Kamu Dapat Diskon     = Rp"<<diskon<<",-" <<endl;
+cout<<"Cash Back             = Rp"<<kembalian<<",-" <<endl <<endl;
+cout<<" ((((TERIMA KASIH)))) " <<endl <<endl;
+
+cout<<"Pembelian Baru [y/t] ";cin>>pembelian;
+if (pembelian=='y'||pembelian=='Y')
+goto atas;
+else
+cout<<"Program Logging Off....";
+}
